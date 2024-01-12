@@ -1,8 +1,10 @@
-INSERT INTO Patient(email,password,name,address,gender)
+-- Password for every account is set to be 1234
+
+INSERT INTO Patient(email,password,name,address,gender, phno)
 VALUES
-('ramesh@gmail.com','1234','Ramesh','Tamil Nadu', 'male'),
-('suresh@gmail.com','1234','Suresh','Karnataka', 'male'),
-('rakesh@gmail.com','1234','Rakesh','Gujarat', 'male')
+('ramesh@gmail.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','Ramesh','Tamil Nadu', 'male', '0000000000'),
+('suresh@gmail.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','Suresh','Karnataka', 'male', '0000000000'),
+('rakesh@gmail.com','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','Rakesh','Gujarat', 'male', '0000000000')
 ;
 
 INSERT INTO MedicalHistory(id,date,conditions,surgeries,medication)
@@ -14,10 +16,10 @@ VALUES
 
 INSERT INTO Doctor(email, gender, password, name)
 VALUES
-('doc1@gmail.com', 'male', '1234', 'Doctor 1'),
-('doc2@gmail.com', 'male', '1234', 'Doctor 2')
+('doc1@gmail.com', 'male', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', 'Doctor 1'),
+('doc2@gmail.com', 'male', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', 'Doctor 2')
 ;
-INSERT INTO admin(email, password, name)
+INSERT INTO admin(email, gender, password, name)
 VALUES
 ('admin1@gmail.com', 'male', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', 'Admin 1');
 INSERT INTO Appointment(id,date,starttime,endtime,status)
