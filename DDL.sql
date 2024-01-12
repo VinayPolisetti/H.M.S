@@ -1,13 +1,15 @@
 CREATE DATABASE HMS;
 USE HMS;
 
-CREATE TABLE Patient(
-email varchar(50) PRIMARY KEY,
-password varchar(266) NOT NULL,
-name varchar(50) NOT NULL,
-address varchar(60) NOT NULL,
-gender VARCHAR(20) NOT NULL
+CREATE TABLE Patient (
+    email VARCHAR(50) PRIMARY KEY,
+    password VARCHAR(266) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    address VARCHAR(60) NOT NULL,
+    gender VARCHAR(20) NOT NULL,
+    phno VARCHAR(10) NOT NULL
 );
+
 
 CREATE TABLE MedicalHistory(
 id int PRIMARY KEY,
@@ -25,6 +27,7 @@ name varchar(50) NOT NULL
 );
 CREATE TABLE admin(
 email varchar(50) PRIMARY KEY,
+gender varchar(20) NOT NULL,
 password varchar(266) NOT NULL,
 name varchar(50) NOT NULL
 );
