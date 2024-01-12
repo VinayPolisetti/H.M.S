@@ -15,6 +15,9 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.0.1"
   },
+  "devDependencies": {
+    "nodemon": "*"
+  },
   "main": "app.js",
   "author": "",
   "license": "ISC",
